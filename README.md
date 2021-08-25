@@ -1,3 +1,4 @@
+## irlon.py
 Building module to get irlon data from lake Okeechobbe
 
 https://irlon.org/
@@ -19,29 +20,10 @@ input:
 * **start** (string): start date with format yyyy-mm-dd. Default start of operations '2021-07-12'.
 * **end** (string): end day with format yyyy-mm-dd or 'now'. Default is 'now'.
 
-
-param options:
-    * 'CDOM', 
-    * 'CDOM+Fluorescence', 
-    * 'Chlorophyll', 
-    * 'Chlorophyll+(blue)+fluorescence', 
-    * 'Phycocyanin+fluorescence', 
-    * 'Turbidity', 
-    * 'Dissolved+oxygen', 
-    * 'Oxygen+saturation', 
-    * 'Specific+conductance', 
-    * 'Water+temperature', 
-    * 'pH', 
-    * 'Nitrate', 
-    * 'Phosphate',  
-    * 'Water+pressure', 
-    * 'Instrument+depth'
-
 output: pandas dataframe with requested parms plus quality control variables for those params
 
 
 	apply_qc(df)
-
 Remove QC columns and replace variables with nan when QC is not good
 
 input : irlon dataframe with qc variables
@@ -49,7 +31,7 @@ input : irlon dataframe with qc variables
 output: QC masked dataframe
 
 	params()
-Prints posibilities of paramas to chose from if not 'all' 
+Prints posibilities of params to chose from if not 'all' 
 
 For examples of usage see notebooks.
 
