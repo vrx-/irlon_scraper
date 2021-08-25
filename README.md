@@ -14,28 +14,28 @@ Obtain data from server
 
 input:
 
-    * **params** (string or list of strings): 'all', or a selection of the parameters available. Default is 'all'.
-    * **level** (string): S (surface), B (bottom), or 'both'. Default is 'both'.
-    * **start** (string): start date with format yyyy-mm-dd. Default start of operations '2021-07-12'.
-    * **end** (string): end day with format yyyy-mm-dd or 'now'. Default is 'now'.
+* **params** (string or list of strings): 'all', or a selection of the parameters available. Default is 'all'.
+* **level** (string): S (surface), B (bottom), or 'both'. Default is 'both'.
+* **start** (string): start date with format yyyy-mm-dd. Default start of operations '2021-07-12'.
+* **end** (string): end day with format yyyy-mm-dd or 'now'. Default is 'now'.
 
 
-    param options:
-        * 'CDOM', 
-        * 'CDOM+Fluorescence', 
-        * 'Chlorophyll', 
-        * 'Chlorophyll+(blue)+fluorescence', 
-        * 'Phycocyanin+fluorescence', 
-        * 'Turbidity', 
-        * 'Dissolved+oxygen', 
-        * 'Oxygen+saturation', 
-        * 'Specific+conductance', 
-        * 'Water+temperature', 
-        * 'pH', 
-        * 'Nitrate', 
-        * 'Phosphate',  
-        * 'Water+pressure', 
-        * 'Instrument+depth'
+param options:
+    * 'CDOM', 
+    * 'CDOM+Fluorescence', 
+    * 'Chlorophyll', 
+    * 'Chlorophyll+(blue)+fluorescence', 
+    * 'Phycocyanin+fluorescence', 
+    * 'Turbidity', 
+    * 'Dissolved+oxygen', 
+    * 'Oxygen+saturation', 
+    * 'Specific+conductance', 
+    * 'Water+temperature', 
+    * 'pH', 
+    * 'Nitrate', 
+    * 'Phosphate',  
+    * 'Water+pressure', 
+    * 'Instrument+depth'
 
 output: pandas dataframe with requested parms plus quality control variables for those params
 
