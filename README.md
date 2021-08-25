@@ -1,5 +1,5 @@
 ## irlon.py
-Building module to get irlon data from lake Okeechobbe
+Building module to get irlon data from lake Okeechobbe. Retunrs a pandas dataframe.
 
 https://irlon.org/
 
@@ -33,6 +33,6 @@ output: QC masked dataframe
 	params()
 Prints posibilities of params to chose from if not 'all' 
 
-For examples of usage see notebooks.
+For examples of usage see notebook: [iron_tester.ipynb](https://github.com/vrx-/irlon_scraper/blob/main/iron_tester.ipynb)
 
 
