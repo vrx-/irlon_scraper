@@ -13,10 +13,13 @@ Currently module has 3 functions
 Obtain data from server
 
 input:
-    **params** (string or list of strings): 'all', or a selection of the parameters available. Default is 'all'.
-    **level** (string): S (surface), B (bottom), or 'both'. Default is 'both'.
-    **start** (string): start date with format yyyy-mm-dd. Default start of operations '2021-07-12'.
-    **end** (string): end day with format yyyy-mm-dd or 'now'. Default is 'now'.
+
+    * **params** (string or list of strings): 'all', or a selection of the parameters available. Default is 'all'.
+    * **level** (string): S (surface), B (bottom), or 'both'. Default is 'both'.
+    * **start** (string): start date with format yyyy-mm-dd. Default start of operations '2021-07-12'.
+    * **end** (string): end day with format yyyy-mm-dd or 'now'. Default is 'now'.
+
+
     param options:
         * 'CDOM', 
         * 'CDOM+Fluorescence', 
@@ -40,12 +43,14 @@ output: pandas dataframe with requested parms plus quality control variables for
 	apply_qc(df)
 
 Remove QC columns and replace variables with nan when QC is not good
+
 input : irlon dataframe with qc variables
+
 output: QC masked dataframe
 
 	params()
 Prints posibilities of paramas to chose from if not 'all' 
 
-for examples of usage see notebooks.
+For examples of usage see notebooks.
 
 
